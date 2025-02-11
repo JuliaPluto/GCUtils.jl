@@ -1,4 +1,5 @@
 module GCUtils
+import Base: show
 
 export setup_gc
 
@@ -8,6 +9,9 @@ mutable struct GCFullMetrics
     @atomic last_http_call_time::Float64
 end
 
+function show(io::IO, ::MIME"text/plain", c::GCFullMetrics)
+    println("GCMetrics[invoked=$(c.counter) times]")
+end
 
 """
 setup_gc

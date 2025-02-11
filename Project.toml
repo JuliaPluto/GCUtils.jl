@@ -1,0 +1,4 @@
+name = "GCUtils"
+uuid = "25d72b2e-e87f-11ef-9f1d-00155d5ae889"
+authors = ["Panagiotis Georgakopoulos", "Krystian Guliński", "JuliaHub"]
+version = "1.0.0"
