@@ -10,5 +10,5 @@ for i in 1:10
     after()
 end
 
-@info "$(metrics)"
+@info "done!" Text(sprint(dump, metrics))
 cleanup()
