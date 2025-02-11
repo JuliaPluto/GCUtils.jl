@@ -10,7 +10,7 @@ mutable struct GCFullMetrics
 end
 
 function show(io::IO, ::MIME"text/plain", c::GCFullMetrics)
-    println("GCMetrics[invoked=$(c.counter) times]")
+    println(io, "GCMetrics[invoked=$(c.counter) times]")
 end
 
 """
